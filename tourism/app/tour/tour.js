@@ -16,6 +16,31 @@ let nizTura = [Tura1,Tura2]
 
 ispisiUTabeli(nizTura)
 isisDetaljaNaKlik()
+preuzimanjePodatakaSaForma(nizTura)
+
+
+function preuzimanjePodatakaSaForma(nizTura) {
+    let submitBtn = document.querySelector('#dugmici')
+
+    submitBtn.addEventListener('click',function(event){
+        event.preventDefault();
+
+        const forma = document.querySelector('#kreiraj');
+        const formaData = new FormData(forma);
+        
+        const naziv = formaData.get('naziv');
+        const opis =formaData.get('Opis');
+        const duzina = formaData.get('Duzina');
+        const tagovi = formaData.get('Tagovi')
+
+
+        let novaTura = new Tura(naziv,opis,duzina,tagovi);
+        nizTura.push(novaTura);
+        
+        sacuvajArtikalUlokalStorage(nizTura);
+        ispisiUTabeli(nizTura)
+})
+}
 
 
 function isisDetaljaNaKlik() {
