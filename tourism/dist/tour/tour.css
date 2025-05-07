@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar .title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.navbar .nav-links li {
+  margin: 0;
+}
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+.navbar .nav-links a:hover {
+  color: #4c9ab4;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 50px;
+  padding-left: 30px;
+}
+.container table {
+  width: 20%;
+  border: 1px solid black;
+  padding: 10px;
+}
+.container table th, .container table td {
+  background-color: #333;
+  color: #f4f4f9;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.details {
+  background-color: #333;
+  color: #f4f4f9;
+  width: 40%;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 80px;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=tour.css.map */
