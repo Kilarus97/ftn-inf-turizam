@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../dist/restaurants/restaurants.css">
+    <title>Restorani</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="title">Restorani</h1>
+        <ul class="nav-links">
+            <li><a href="../contact/contact.html">Kontakt</a></li>
+            <li><a href="../tour/tour.html">Ture</a></li>
+            <li><a href="restaurants.html">Restorani</a></li>
+        </ul>
+    </nav>
+
+    <div id="mainContent">
+        <table id="restorani">
+            <thead>
+                <tr>
+                    <th>Naziv</th>
+                    <th>Kuhinja</th>
+                </tr>
+            </thead>
+            <tbody id="restorani-telo">
+
+            </tbody>
+        </table>
+
+        <div id="formWrapper">
+            <form id="forma">
+                <label for = "kreiraj" id = "glavniLabel">Unesite novi restoran</label>
+                <br>
+                <br>
+
+                <label for="naziv">Naziv:</label>
+                <input type="text" id="naziv" name="naziv" placeholder="Unesite Naziv" required>
+                <br>
+
+                <label for="opis">Opis:</label>
+                <input type="text" id="opis" name="opis" placeholder="Unesite opis" required>
+                <br>
+
+                <label for="kuhinja">Kuhinja:</label>
+                <input type="text" id="kuhinja" name="kuhinja" placeholder="Unesite tip kuhinje">
+                <button type="button" id="dodajKuhinju">+</button>
+            </form>
+            <br>
+            <button type="button" id="dodaj">Dodaj</button>
+        </div>
+    </div>
+
+    <div id="detalji"></div>
+
+    <script src="restaurants.js"></script>
+</body>

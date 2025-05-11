@@ -1,0 +1,137 @@
+$primary-color: #333;
+$secondary-color: #fff;
+$accent-color: #4c9ab4;
+$background-color: #f4f4f9;
+$text-color: #333;
+$description-text: #555;
+$box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: $background-color;
+    color: $text-color;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-color;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: $box-shadow;
+
+    .title {
+        color: $secondary-color;
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+
+        li {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: $secondary-color;
+            font-size: 18px;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $accent-color;
+            }
+        }
+    }
+}
+
+#mainContent { 
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    margin: 50px;
+    padding-left: 30px;
+
+    table { 
+        width: 20%;
+        border: 1px solid black;
+        padding: 10px;
+        
+
+        th,td{
+            background-color: #333;
+            color: #f4f4f9;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+    }
+    #formWrapper {
+        border: 2px solid black;
+        border-radius: 20px;
+        width: fit-content;
+        padding: 10px;
+        background-color: $primary-color;
+        color: $secondary-color;
+        overflow: hidden;
+        margin-left: 600px;
+      
+        #forma {
+            label {
+            display: inline-block;
+            width: 70px;
+            }
+      
+            input {
+            display: inline-block;
+            width: 140px;
+            border: none;
+            border-bottom: 1px solid black;
+            outline: none;
+            }
+
+            #glavniLabel {
+                text-align: center;
+                width: 250px;
+            }
+
+            #dodajKuhinju{
+                width: 25px;
+            }
+        }
+      
+        #dodaj {
+          float: right;
+          margin-top: 5px;
+          padding: 2px 8px;
+        }
+    }
+}      
+#detalji {
+    display: none;
+    background-color: $primary-color;
+    color: $background-color;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: fit-content;
+    padding: 10px;
+    margin: 30px;
+  
+    p {
+      margin: 0;
+    }
+}
