@@ -89,13 +89,20 @@ body {
   text-align: center;
   width: 250px;
 }
-#mainContent #formWrapper #forma #dodajKuhinju {
+#mainContent #formWrapper #forma #tipKuhinje {
   width: 25px;
 }
 #mainContent #formWrapper #dodaj {
   float: right;
   margin-top: 5px;
   padding: 2px 8px;
+}
+
+.kuhinjaRed {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 #detalji {
